@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Quiz Front Page</title>
+  <link rel="stylesheet" href="indexstudent2.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Student Quiz</h1>
+    <p class="subtitle">Choose an option below to continue</p>
+    <div class="button-container">
+      <button id="examBtn" onclick="exampage()">Exam</button>
+      <button id="marksBtn" onclick="marksPage()">Previous Marks</button>
+    </div>
+  </div>
+
+  <script>
+    function exampage() {
+      window.location.href = 'student.html';
+    }
+    function marksPage() {
+      window.location.href = 'marks.html'; // Replace with your actual marks page URL
+    }
+
+    // Fade-in animation trigger for buttons container
+    window.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.button-container');
+      container.style.opacity = '1';
+    });
+  </script>
+</body>
+</html>

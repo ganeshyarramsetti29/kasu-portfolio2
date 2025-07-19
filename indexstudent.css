@@ -1,0 +1,48 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-container {
+  display: flex;
+  gap: 30px;
+}
+
+#examBtn {
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#examBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+#marksBtn {
+  padding: 15px 40px;
+  font-size: 20px;
+  background-color: #28a745;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(40,167,69,0.4);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#marksBtn:hover {
+  background-color: #19692c;
+  transform: translateY(-3px);
+}

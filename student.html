@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz Selector</title>
+  <link rel="stylesheet" href="student.css" />
+  <script src="student2.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <label for="branch">🏫 Select Branch:</label>
+      <select id="branch" onchange="onBranchChange()">
+        <option value="">-- Choose Branch --</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <label for="semester">📚 Select Semester:</label>
+      <select id="semester" onchange="onSemesterChange()">
+        <option value="">-- Choose Semester --</option>
+      </select>
+    </div>
+
+    <div class="box">
+      <label for="subject">📘 Select Subject:</label>
+      <select id="subject">
+        <option value="">-- Choose Subject --</option>
+      </select>
+    </div>
+
+    <div class="box submit-box">
+      <button id="submitBtn" type="button" onclick="handleSubmit()">Submit</button>
+    </div>
+  </div>
+</body>
+</html>
